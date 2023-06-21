@@ -1,7 +1,7 @@
-Move froward with => W
-Move backward with  => S
-Stear to the right with  => d
-Stear to the left with => a
+##Move froward with => W .
+##Move backward with  => S .
+##Stear to the right with  => d .
+##Stear to the left with => a .
 
 whenever you have accident try to mess with the up and down arrows they will apply local impulse and flip the car or reset the scene with R
 
