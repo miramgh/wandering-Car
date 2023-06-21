@@ -13,7 +13,7 @@ function Car({thirdPerson , movement}) {
      let mesh  = useLoader(GLTFLoader , '/models/car.glb').scene
      let result = useLoader(
       GLTFLoader,
-       "/models/frog.glb"
+       "/models/car.glb"
     ).scene;
   
      const position = [-1.5 , 0.5 , 3]
@@ -67,7 +67,7 @@ function Car({thirdPerson , movement}) {
 
      useEffect(()=>{
         mesh.scale.set(0.0012 , 0.0012 , 0.0012)
-        result.scale.set(0.1 , 0.1 , 0.1)
+       
         mesh.children[0].position.set(-365 , -18 , -67)
      }, [mesh])
     // console.log(WheelDebug)
