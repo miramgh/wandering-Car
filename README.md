@@ -9,4 +9,4 @@ Alse the car collide with some objects in the scene
 
 try to fly => use the ramp 
 
-![car in the scene]([http://url/to/img.png](https://github.com/miramgh/wandering-Car/blob/master/public/a.png))
+![car in the scene](https://github.com/miramgh/wandering-Car/blob/master/public/a.png)
