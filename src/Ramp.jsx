@@ -1,0 +1,24 @@
+import { useTrimesh } from "@react-three/cannon";
+import { useLoader } from "@react-three/fiber";
+import { useRef } from "react";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
+export function Ramp() {
+  const result = useLoader(GLTFLoader, "/models/ramp.glb");
+
+  const geometry = result.scene.children[0].geometry;
+  
+  const vertices = geometry.attributes.position.array;
+  const indices  = geometry.index.array;
+ 
+  // this creates a new physics mesh object with the same vertices that we passed 
+  // should be avoided as creating object from mesh will impact the performance 
+  const [ref] = useTrimesh(
+    () => ({
+      args: [vertices, indices],
+      mass: 0,
+      type: "Static",
+    }),
+    useRef(null)
+  );
+}
